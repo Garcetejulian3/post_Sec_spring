@@ -9,6 +9,7 @@ public interface IUserProfileService {
     public List<DTOUserProfileResponse> userList();
     public DTOUserProfileResponse findUser(Long id);
     public DTOUserProfileResponse createUser(DTORegisterUser user);
-    public DTOUserProfileResponse editUser(DTORegisterUser user);
+    public DTOUserProfileResponse editUser(DTORegisterUser user,Long id);
+    public String encriptPassword(String password);
 
 }
